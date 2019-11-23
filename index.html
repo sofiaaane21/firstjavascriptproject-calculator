@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="calc">
+
+  <div>
+<form name="form" >
+  <input class="textview" name="textview">
+</form>
+
+  </div>
+  <div class="buttons">
+    <button class="buttonin" value="(" onclick="insert('(')">(</button>
+    <button class="buttonin" value=")" onclick="insert(')')">)</button>
+    <button class="buttonin" value="%" onclick="insert('%')">%</button>
+    <button class="buttonin" value="C" onclick="Clear()">C</button>
+    <button class="buttonin" value="7" onclick="insert(7)">7</button>
+    <button class="buttonin" value="8" onclick="insert(8)">8</button>
+    <button class="buttonin" value="9" onclick="insert(9)">9</button>
+    <button class="buttonin" value="/" onclick="insert('/')">/</button>
+    <button class="buttonin" value="4" onclick="insert(4)">4</button>
+    <button class="buttonin" value="5" onclick="insert(5)">5</button>
+    <button class="buttonin" value="6" onclick="insert(6)">6</button>
+    <button class="buttonin" value="*" onclick="insert('*')">*</button>
+    <button class="buttonin" value="1" onclick="insert(1)">1</button>
+    <button class="buttonin" value="2" onclick="insert(2)">2</button>
+    <button class="buttonin" value="3" onclick="insert(3)">3</button>
+    <button class="buttonin" value="-" onclick="insert('-')">-</button>
+    <button class="buttonin" value="0" onclick="insert(0)">0</button>
+    <button class="buttonin" value="." onclick="insert('.')">.</button>
+    <button class="buttonin" value="=" onclick="equal()">=</button>
+    <button class="buttonin" value="+" onclick="insert('+')">+</button>
+  </div>
+</div>
+    <style>
+
+    .buttons {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+
+ 
+}
+    </style>
+    <script>
+    function insert(num){
+      document.form.textview.value = document.form.textview.value+num
+    }
+    
+    function equal(){
+      var exp = document.form.textview.value;
+     if (exp){ document.form.textview.value = eval(exp)
+
+      }
+      
+    }
+    function Clear(){
+      document.form.textview.value="";
+    
+}
+
+    </script>
+  
+</body>
+</html>

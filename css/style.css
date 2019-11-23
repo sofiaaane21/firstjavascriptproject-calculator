@@ -1,0 +1,33 @@
+* {
+background-color: rgb(229, 210, 240);
+
+
+
+}
+
+.textview{
+background-color: rgb(185, 224, 145);
+width: 175px;
+text-align: center;
+border-radius: 5px;
+}
+
+
+.buttons{
+    background-color: rgb(242, 243, 154);
+    width: 50%;
+    padding: 120px;
+    border-radius: 5px;
+}
+
+.buttonin{
+    border-radius: 5px;
+    background-color: lawngreen;
+}
+
+.calc{
+    border-radius: 5px;
+padding-right: 33% ;
+padding-left: 33% ;
+content: ;
+}
